@@ -6,6 +6,7 @@
  */
 // No cambies el nombre de la funcion ni los parametros
 const cuadradoEnteros = (arr) => {
+  return arr.filter((x) => x > 0 && x % 1 === 0).map((x) => Math.pow(x, 2));
   //  Tu respuesta va aqui
 };
 
