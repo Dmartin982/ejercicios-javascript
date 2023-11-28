@@ -7,7 +7,7 @@
 
 // No cambies el nombre de la funcion ni los parametros
 const cambioSigno = (num) => {
-  //  Tu respuesta va aqui
+  return -num;
 };
 
 // 👇 No modifiques este codigo 🚫
