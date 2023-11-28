@@ -12,6 +12,10 @@ retorna-> false
 // No cambies el nombre de la funcion ni los parametros
 const finalIdentico = (cadena, final) => {
   //  Tu respuesta va aqui
+  const subcadenaEscapada = final.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const regex = new RegExp(`${subcadenaEscapada}$`);
+  resultado = regex.test(cadena);
+  return resultado;
 };
 
 // 👇 No modifiques este codigo 🚫
