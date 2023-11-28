@@ -14,7 +14,16 @@ Ejemplo:
 
 // No cambies el nombre de la funcion ni los parametros
 const factorial = (num) => {
+  var factorial = num;
   //  Tu respuesta va aqui
+  if (num === 0) { return 1 }
+  else if (num > 0) {
+    for (i = num - 1; i >= 1; i--) {
+      factorial *= i;
+    }
+    return factorial;
+  }
+  else { return "No acepta negativos" };
 };
 
 // 👇 No modifiques este codigo 🚫
