@@ -8,8 +8,13 @@
 
 // No cambies el nombre de la funcion ni los parametros
 const mayorDeUnArray = (arr) => {
-  //  Tu respuesta va aqui
-};
+  var numeroMayor = arr[0];
+  for (var elemento of arr) {
+    if (elemento > numeroMayor) { numeroMayor = elemento };
+  }
+  return numeroMayor;
+}
+  ;
 
 // 👇 No modifiques este codigo 🚫
 module.exports = {
