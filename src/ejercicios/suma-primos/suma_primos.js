@@ -8,6 +8,10 @@
 // No cambies el nombre de la funcion ni los parametros
 const sumaPrimos = (num) => {
   //  Tu respuesta va aqui
+  var primeArr = [];
+  for (i = 1; i <= num; i++) {
+    primeArr.push(i)
+  }
 };
 
 // 👇 No modifiques este codigo 🚫

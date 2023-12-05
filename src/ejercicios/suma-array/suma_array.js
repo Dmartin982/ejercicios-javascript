@@ -7,7 +7,17 @@
  */
 // No cambies el nombre de la funcion ni los parametros
 const sumArray = (array, num) => {
-  //  Tu respuesta va aqui
+  // Iterar sobre cada elemento del array
+  for (let i = 0; i < array.length; i++) {
+    for (let j = i + 1; j < array.length; j++) {
+      // Verificar si la suma de los elementos es igual a num y los elementos son diferentes
+      if (array[i] + array[j] === num) {
+        return [array[i], array[j]];
+      }
+    }
+  }
+  // Si no se encuentra ningún par de números que cumpla las condiciones, retornar false
+  return false;
 };
 
 // 👇 No modifiques este codigo 🚫
